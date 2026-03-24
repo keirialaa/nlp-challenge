@@ -1,0 +1,28 @@
+# --- Python Virtual Environment ---
+.venv/
+venv/
+ENV/
+env/
+bin/
+lib/
+include/
+
+# --- Python Cache & Metadata ---
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ipynb_checkpoints/
+
+# --- Data Files ---
+dataset/
+
+# --- IDE & System Files ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Logs & Performance ---
+*.log
+.coverage
