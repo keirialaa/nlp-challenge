@@ -37,6 +37,7 @@ def preprocess_data(text: str) -> list:
 
     # Stopword removal
     stop_words = set(stopwords.words('english'))
+    stop_words.add('reuters') # Remove the common word in all real articles
     text_no_stopwords = [word for word in text_tokenized if word not in stop_words]
 
     # Lemmatization 
