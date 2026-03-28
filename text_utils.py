@@ -8,10 +8,11 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem.wordnet import WordNetLemmatizer
+from nltk.tokenize import sent_tokenize
 
 def clean_data(text: str) -> str:
     '''
-    Function takes in a string, 
+    Takes in a string, 
     returns the cleaned string by convering to 
     lowercase, and removing punctuation and numbers.
     '''
@@ -27,7 +28,7 @@ def clean_data(text: str) -> str:
 
 def preprocess_data(text: str) -> list:
     '''
-    Functionn takes in a string, 
+    Takes in a string, 
     returns the pre-processed string by 
     performing tokenization, stopword removal, 
     and lemmatization.
